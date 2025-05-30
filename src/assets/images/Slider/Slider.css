@@ -1,0 +1,11 @@
+.carouselItem {
+  margin-right: 5px;
+}
+
+.carouselItem:last-child {
+  margin-right: 1px;
+}
+
+.carouselItem:first-child {
+  margin-left: 10px;
+}

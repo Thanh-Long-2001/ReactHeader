@@ -1,0 +1,76 @@
+{
+  "NewArrivals": {
+    "title": "New Arrivals",
+    "items": [
+      {
+        "id": 1,
+        "name": "T-SHIRT WITH TAPE DETAILS",
+        "stars": "4.5/5",
+        "image": "Image7",
+        "price": 120,
+        "discountPercent": 0
+      },
+      {
+        "id": 2,
+        "name": "SKINNY FIT JEANS",
+        "stars": "3.5/5",
+        "image": "Image8",
+        "price": 250,
+        "discountPercent": 20
+      },
+      {
+        "id": 3,
+        "name": "TCHECKERED SHIRT",
+        "stars": "4.5/5",
+        "image": "Image9",
+        "price": 180,
+        "discountPercent": 0
+      },
+      {
+        "id": 4,
+        "name": "SLEEVE STRIPED T-SHIRT",
+        "stars": "4.5/5",
+        "image": "Image10",
+        "price": 300,
+        "discountPercent": 30
+      }
+    ]
+  },
+  "TopSelling": {
+    "title": "Top Selling",
+    "items": [
+      {
+        "id": 1,
+        "name": "T-SHIRT WITH TAPE DETAILS",
+        "stars": "4.5/5",
+        "image": "Image7",
+        "price": 120,
+        "discountPercent": 0
+      },
+      {
+        "id": 2,
+        "name": "SKINNY FIT JEANS",
+        "stars": "3.5/5",
+        "image": "Image8",
+        "price": 250,
+        "discountPercent": 20
+      },
+      {
+        "id": 3,
+        "name": "TCHECKERED SHIRT",
+        "stars": "4.5/5",
+        "image": "Image9",
+        "price": 180,
+        "discountPercent": 0
+      },
+      {
+        "id": 4,
+        "name": "SLEEVE STRIPED T-SHIRT",
+        "stars": "4.5/5",
+        "image": "Image10",
+        "price": 300,
+        "discountPercent": 30
+      }
+    ]
+  }
+}

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Intergral CF';
-  src: url('src/assets/fonts/Fontspring-DEMO-integralcf-bold.otf') format('opentype');
+  font-family: "Intergral CF";
+  src: url("src/assets/fonts/Fontspring-DEMO-integralcf-bold.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
