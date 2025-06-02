@@ -32,8 +32,10 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
   const carouselRef = useRef<Carousel>(null);
   return (
     <div className="w-[1243px] ml-[100px] mt-[80px]">
-      <div className="flex justify-between items-center mb-[40px]">
-        <h2 className="text-[48px] font-[700]">OUR HAPPY CUSTOMERS</h2>
+      <div className="flex justify-between items-center mb-[40px] font-intergralCF">
+        <h2 className="text-[48px] font-[700] h-[58px] w-[654px]">
+          OUR HAPPY CUSTOMERS
+        </h2>
         <div className="flex gap-2">
           <button
             onClick={() => carouselRef?.current?.previous(1)}
@@ -65,13 +67,13 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
             <div className="w-[336px] flex flex-col ml-[40px]">
               <div className="flex items-center mb-2 mt-[28px]">
                 {renderStars(getNumericStars(item.stars))}
-                <span className="ml-2 text-sm text-gray-500">{item.stars}</span>
+                <span className="ml-2 text-sm text-black/60">{item.stars}</span>
               </div>
               <div className="flex gap-1">
                 <span className="">{item.name}</span>
                 <img src={VerifyIcon}></img>
               </div>
-              <p className="font-[Satoshi] text-[16px] mt-3">{item.comment}</p>
+              <p className="font-satoshi text-[16px] mt-3">{item.comment}</p>
             </div>
           </div>
         ))}

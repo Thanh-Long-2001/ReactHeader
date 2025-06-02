@@ -1,7 +1,7 @@
-import Image11 from "../../../assets/images/DressStyle/image 11.png";
-import Image12 from "../../../assets/images/DressStyle/image 12.png";
-import Image13 from "../../../assets/images/DressStyle/image 13.png";
-import Image14 from "../../../assets/images/DressStyle/image 14.png";
+import Image11 from "../../../assets/images/dressStyle/image 11.png";
+import Image12 from "../../../assets/images/dressStyle/image 12.png";
+import Image13 from "../../../assets/images/dressStyle/image 13.png";
+import Image14 from "../../../assets/images/dressStyle/image 14.png";
 
 const dressStyles = [
   {
@@ -29,7 +29,7 @@ const dressStyles = [
 export const DressStyle = () => {
   return (
     <div className="bg-[#f2f2f2] px-[64px] rounded-[40px] w-[1240px] flex flex-col items-center ml-[100px] h-[866px]">
-      <span className="text-center text-[48px] font-[700] mb-[64px] mt-[70px]">
+      <span className="text-center text-[48px] font-intergralCF mb-[64px] mt-[70px] h-[58px] w-[687px]">
         BROWSE BY DRESS STYLE
       </span>
       <div className="grid grid-cols-3 grid-rows-2 gap-5">
@@ -45,7 +45,7 @@ export const DressStyle = () => {
               alt={style.label}
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-[25px] left-[36px] text-black font-[Satoshi] text-[36px] bg-transparent px-2 py-1 rounded">
+            <div className="absolute top-[25px] left-[36px] text-black font-satoshi text-[36px] bg-transparent px-2 py-1 rounded">
               {style.label}
             </div>
           </div>

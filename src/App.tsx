@@ -1,9 +1,9 @@
 import "./App.css";
-import { Banner } from "./components/Banner/Banner";
-import { MainBanner } from "./components/Banner/MainBanner";
-import { MainContent } from "./components/Content/MainContent";
-import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
+import { Banner } from "./components/banner/Banner";
+import { MainBanner } from "./components/banner/MainBanner";
+import { MainContent } from "./components/content/MainContent";
+import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header/Header";
 
 function App() {
   return (

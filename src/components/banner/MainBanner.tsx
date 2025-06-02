@@ -2,9 +2,9 @@ import { StartIcon } from "../../assets/icons/StartIcon";
 import { FooterBanner } from "./FooterBanner";
 import BannerImage from "../../assets/images/Rectangle 2.png";
 
-const brands = 200;
-const products = 2000;
-const customers = 30000;
+const brands = "200";
+const products = "2,000";
+const customers = "30,000";
 
 export const MainBanner = () => {
   return (
@@ -14,43 +14,43 @@ export const MainBanner = () => {
           <img src={BannerImage} className="w-full h-full bg-cover" />
 
           <div className="absolute flex flex-col items-start text-black text-left left-[100px] top-[103px]">
-            <div className="w-[577px]">
-              <h1 className="text-[64px] font-[Intergral CF] font-[700] leading-[64px] ">
+            <div className="w-[577px] h-[173px] inline-block leading-16 text-[64px] font-intergralCF">
+              <span className="block text-start mt-[-17px]">
                 FIND CLOTHES THAT MATCHES YOUR STYLE
-              </h1>
+              </span>
             </div>
-            <div className="w-[545px] text-[16px] font-[Satoshi] font-[400]">
+            <div className="w-[545px] text-[16px] font-satoshi font-[400] mt-8 text-black/60">
               <span>
                 Browse through our diverse range of meticulously crafted
                 garments, designed to bring out your individuality and cater to
                 your sense of style.
               </span>
             </div>
-            <button className="bg-black hover:bg-black-700 text-white font-semibold py-4 px-[54px] rounded-[62px] shadow-lg mt-[32px]">
-              Get Started
+            <button className="bg-black hover:bg-black-700 text-white font-semibold py-4 px-[54px] rounded-[62px] shadow-lg mt-8">
+              Shop now
             </button>
             <div className="h-[74px] w-[596px] flex flex-row gap-8 mt-[32px]">
               <div className="flex flex-col w-[141px]">
-                <h2 className="text-[40px] font-[700] leading-[100%] font-[Satoshi]">
-                  {brands.toLocaleString()}+
+                <h2 className="text-[40px] font-[700] leading-[100%] font-satoshi">
+                  {brands}+
                 </h2>
-                <span className="text-[16px] font-[400] leading-[22px] font-[Satoshi]">
+                <span className="text-[16px] font-[400] leading-[22px] font-satoshi">
                   International Brands
                 </span>
               </div>
               <div className="flex flex-col w-[156px]">
-                <h2 className="text-[40px] font-[700] leading-[100%] font-[Satoshi]">
-                  {products.toLocaleString()}+
+                <h2 className="text-[40px] font-[700] leading-[100%] font-satoshi">
+                  {products}+
                 </h2>
-                <span className="text-[16px] font-[400] leading-[22px] font-[Satoshi]">
+                <span className="text-[16px] font-[400] leading-[22px] font-satoshi">
                   High-Quality Products
                 </span>
               </div>
               <div className="flex flex-col w-[171px]">
-                <h2 className="text-[40px] font-[700] leading-[100%] font-[Satoshi]">
-                  {customers.toLocaleString()}+
+                <h2 className="text-[40px] font-[700] leading-[100%] font-satoshi">
+                  {customers}+
                 </h2>
-                <span className="text-[16px] font-[400] leading-[22px] font-[Satoshi]">
+                <span className="text-[16px] font-[400] leading-[22px] font-satoshi">
                   Happy Customers
                 </span>
               </div>
