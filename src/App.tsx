@@ -7,7 +7,7 @@ import { Header } from "./components/header/Header";
 
 function App() {
   return (
-    <div className="min-w-[640px]">
+    <div className="">
       <Banner />
       <Header />
       <MainBanner />

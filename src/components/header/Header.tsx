@@ -7,7 +7,7 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <div className="w-full h-[110px] flex items-center">
+    <div className="w-full h-[110px] max-md:h-14 flex items-center">
       <div className="w-full px-[12px]">
         <div className="w-full max-w-[1240px] h-[48px] mx-auto flex items-center gap-10 justify-between">
           <div className="md:w-40 w-[126px] md:h-[22px] h-[18px] flex items-center justify-center ">
@@ -37,7 +37,7 @@ export const Header = () => {
             />
           </div>
           <div className="relative md:block md:w-[62px] w-full max-w-[96px]">
-            <div className="absolute top-[-70px] right-0">
+            <div className="absolute top-[-70px] right-0 max-md:hidden">
               <CancelIcon />
             </div>
             <div className="flex justify-between ">

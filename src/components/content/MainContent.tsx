@@ -5,7 +5,7 @@ import dataVote from "../../data/vote.json";
 import { Slider } from "../../assets/images/slider/Slider";
 export const MainContent = () => {
   return (
-    <div className="w-[1440px] flex flex-col mx-auto">
+    <div className="w-[1440px] flex flex-col mx-auto max-md:w-full">
       <NewArrival data={data.NewArrivals} />
       <NewArrival data={data.TopSelling} />
       <DressStyle />

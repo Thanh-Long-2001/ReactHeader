@@ -15,10 +15,10 @@ const responsive = {
   //     breakpoint: { max: 1024, min: 464 },
   //     items: 2,
   //   },
-  //   mobile: {
-  //     breakpoint: { max: 464, min: 0 },
-  //     items: 1,
-  //   },
+  mobile: {
+    breakpoint: { max: 464, min: 390 },
+    items: 1,
+  },
 };
 
 type Vote = {
@@ -31,21 +31,21 @@ type Vote = {
 export const Slider = ({ data }: { data: { items: Vote[] } }) => {
   const carouselRef = useRef<Carousel>(null);
   return (
-    <div className="w-[1243px] ml-[100px] mt-[80px]">
-      <div className="flex justify-between items-center mb-[40px] font-intergralCF">
-        <h2 className="text-[48px] font-[700] h-[58px] w-[654px]">
+    <div className="md:w-[1243px] w-full md:ml-[100px] md:mt-[80px] mt-[50px]">
+      <div className="flex justify-between items-center md:mb-10 mb-6 font-intergralCF max-md:relative">
+        <h2 className="md:text-[48px] font-[700] md:h-[58px] md:w-[654px] text-[32px] h-18 w-[286px] max-md:ml-4 max-md:leading-9 ">
           OUR HAPPY CUSTOMERS
         </h2>
-        <div className="flex gap-2">
+        <div className="flex gap-2 max-md:absolute right-0 bottom-0">
           <button
             onClick={() => carouselRef?.current?.previous(1)}
-            className="bg-transparent p-2 rounded"
+            className="bg-transparent px-2 pt-2 rounded"
           >
             <img src={LeftArrow} />
           </button>
           <button
             onClick={() => carouselRef?.current?.next(1)}
-            className="bg-transparent p-2 rounded"
+            className="bg-transparent px-2 pt-2 rounded max-md:mr-2"
           >
             <img src={RightArrow} />
           </button>
@@ -57,14 +57,14 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
         itemClass="carouselItem"
         ref={carouselRef}
         arrows={false}
-        containerClass="flex justify-center rounded-[20px] "
+        containerClass="flex md:justify-center rounded-[20px] max-md:ml-4"
       >
         {data?.items?.map((item: Vote) => (
           <div
             key={item.id}
-            className="w-[400px] h-[240px] rounded-[20px] border border-gray-300"
+            className="md:w-[400px] md:h-[240px] h-[186.19px] w-[358px] rounded-[20px] border border-gray-300"
           >
-            <div className="w-[336px] flex flex-col ml-[40px]">
+            <div className="w-[336px] flex flex-col md:ml-10 ml-6">
               <div className="flex items-center mb-2 mt-[28px]">
                 {renderStars(getNumericStars(item.stars))}
                 <span className="ml-2 text-sm text-black/60">{item.stars}</span>

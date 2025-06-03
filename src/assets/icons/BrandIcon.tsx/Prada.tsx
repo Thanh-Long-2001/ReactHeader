@@ -1,8 +1,10 @@
-export const Prada = () => {
+import type { IconProps } from "../../../utils/IconType";
+
+export const Prada = ({ w = "195", h = "32" }: IconProps) => {
   return (
     <svg
-      width="195"
-      height="32"
+      width={w}
+      height={h}
       viewBox="0 0 195 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

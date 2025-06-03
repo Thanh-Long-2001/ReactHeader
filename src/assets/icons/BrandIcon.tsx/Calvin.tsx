@@ -1,8 +1,10 @@
-export const Calvin = () => {
+import type { IconProps } from "../../../utils/IconType";
+
+export const Calvin = ({ w = "208", h = "34" }: IconProps) => {
   return (
     <svg
-      width="208"
-      height="34"
+      width={w}
+      height={h}
       viewBox="0 0 208 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

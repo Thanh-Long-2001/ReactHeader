@@ -28,16 +28,20 @@ const dressStyles = [
 
 export const DressStyle = () => {
   return (
-    <div className="bg-[#f2f2f2] px-[64px] rounded-[40px] w-[1240px] flex flex-col items-center ml-[100px] h-[866px]">
-      <span className="text-center text-[48px] font-intergralCF mb-[64px] mt-[70px] h-[58px] w-[687px]">
-        BROWSE BY DRESS STYLE
-      </span>
-      <div className="grid grid-cols-3 grid-rows-2 gap-5">
+    <div className="bg-[#f2f2f2] md:px-[64px] px-[24px] max-md:mx-4 rounded-[40px] md:w-[1240px] flex flex-col items-center md:ml-[100px] md:h-[866px] h-[975px]">
+      <div className="md:text-[48px] text-[32px] font-intergralCF md:mb-[64px] md:mt-[70px] mt-10 md:h-[58px] h-[72px] w-[687px] max-md:text-wrap max-md:w-[246px] ">
+        <span className="flex text-center max-md:leading-9">
+          BROWSE BY DRESS STYLE
+        </span>
+      </div>
+      <div className="grid md:grid-cols-3 md:grid-rows-2 md:gap-5 gap-y-4 max-md:grid-cols-1 max-md:mt-7">
         {dressStyles.map((style) => (
           <div
             key={style.id}
-            className={`relative rounded-[20px] overflow-hidden h-[289px] cursor-pointer ${
-              style.id === 3 || style.id === 2 ? "col-span-2" : "col-span-1"
+            className={`relative rounded-[20px] overflow-hidden md:h-[289px] h-[190px] max-md:w-[310px] cursor-pointer ${
+              style.id === 3 || style.id === 2
+                ? "md:col-span-2"
+                : "md:col-span-1"
             }`}
           >
             <img
@@ -45,7 +49,7 @@ export const DressStyle = () => {
               alt={style.label}
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-[25px] left-[36px] text-black font-satoshi text-[36px] bg-transparent px-2 py-1 rounded">
+            <div className="absolute md:top-[25px] md:left-[36px] top-4 left-6 text-black font-satoshi md:text-[36px] bg-transparent md:px-2 md:py-1 rounded text-[24px]">
               {style.label}
             </div>
           </div>

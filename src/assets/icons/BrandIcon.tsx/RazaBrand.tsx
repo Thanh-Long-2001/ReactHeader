@@ -1,8 +1,10 @@
-export const RazaBrand = () => {
+import type { IconProps } from "../../../utils/IconType";
+
+export const RazaBrand = ({ w = "92", h = "38" }: IconProps) => {
   return (
     <svg
-      width="92"
-      height="38"
+      width={w}
+      height={h}
       viewBox="0 0 92 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

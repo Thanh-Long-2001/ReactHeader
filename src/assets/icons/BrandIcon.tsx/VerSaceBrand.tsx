@@ -1,8 +1,10 @@
-export const VerSaceBrand = () => {
+import type { IconProps } from "../../../utils/IconType";
+
+export const VerSaceBrand = ({ w = "167", h = "34" }: IconProps) => {
   return (
     <svg
-      width="167"
-      height="34"
+      width={w}
+      height={h}
       viewBox="0 0 167 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

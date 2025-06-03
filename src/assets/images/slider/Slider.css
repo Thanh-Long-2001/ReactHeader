@@ -1,11 +1,13 @@
-.carouselItem {
-  margin-right: 5px;
-}
+@media (min-width: 768px) {
+  .carouselItem {
+    margin-right: 5px; /* ví dụ margin rộng hơn */
+  }
 
-.carouselItem:last-child {
-  margin-right: 1px;
-}
+  .carouselItem:last-child {
+    margin-right: 1px;
+  }
 
-.carouselItem:first-child {
-  margin-left: 10px;
+  .carouselItem:first-child {
+    margin-left: 10px;
+  }
 }
