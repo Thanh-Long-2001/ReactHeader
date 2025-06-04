@@ -11,7 +11,7 @@ export const MainBanner = () => {
   return (
     <>
       <div className="w-full h-[663px] max-md:h-[853px] bg-[#f2f0f1]">
-        <div className="relative md:max-w-[1440px] md:mx-auto flex flex-col h-full">
+        <div className="relative md:w-[1440px] md:mx-auto flex flex-col h-full">
           <div className="w-full md:h-full h-112 max-md:absolute bottom-0">
             <img
               src={BannerImage}
@@ -54,7 +54,7 @@ export const MainBanner = () => {
               <button className="">Shop now</button>
             </div>
             <div className="md:h-[74px] w-[596px] flex flex-row md:gap-8 mt-[32px] max-md:w-full max-md:flex-wrap max-md:mt-5">
-              <div className="flex flex-col w-[141px] max-md:flex-1 max-md:ml-10 max-md:h-13 max-md:mr-[27.5px]">
+              <div className="flex flex-col md:w-[141px] max-md:flex-1 max-md:ml-10 max-md:h-13 max-md:mr-[27.5px]">
                 <h2 className="text-[40px] font-[700] leading-[100%] font-satoshi max-md:text-2xl">
                   {brands}+
                 </h2>
@@ -63,7 +63,7 @@ export const MainBanner = () => {
                 </span>
               </div>
               <div className="w-[1px] h-13 md:hidden border-l-[1px] border-black/10"></div>
-              <div className="flex flex-col w-[156px] max-md:flex-1 max-md:mr-10 max-md:h-13 max-md:ml-[27.5px]">
+              <div className="flex flex-col md:w-[156px] max-md:flex-1 max-md:mr-10 max-md:h-13 max-md:ml-[27.5px]">
                 <h2 className="text-[40px] font-[700] leading-[100%] font-satoshi max-md:text-2xl">
                   {products}+
                 </h2>
@@ -71,7 +71,7 @@ export const MainBanner = () => {
                   High-Quality Products
                 </span>
               </div>
-              <div className="flex flex-col w-[171px] max-md:w-full max-md:items-center max-md:h-12 max-md:mt-3">
+              <div className="flex flex-col md:w-[171px] max-md:w-full max-md:items-center max-md:h-12 max-md:mt-3">
                 <h2 className="text-[40px] font-[700] leading-[100%] font-satoshi max-md:text-2xl">
                   {customers}+
                 </h2>

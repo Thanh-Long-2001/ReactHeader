@@ -43,18 +43,16 @@ export const NewArrival = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:h-[745px] w-[1240px] max-md:w-full items-center ${
-        data.title === "Top Selling" ? "border-0" : "border-b-[0.1px]"
-      }  border-b-black/10 md:ml-[100px] max-md:pb-10`}
+      className={`flex flex-col md:h-[745px] w-[1240px] max-md:w-full items-center md:ml-[100px] max-md:pb-10`}
     >
       <div className="font-intergralCF text-[48px] leading-[100%] md:mt-[64px] mt-10 mb-[55px] md:w-[403px] w-full md:h-[58px] h-[38px] flex items-center justify-center max-md:text-[32px]">
         {data?.title}
       </div>
-      <div className="w-full flex flex-row md:gap-5 max-md:overflow-x-auto max-md:whitespace-nowrap max-md:scroll-smooth scrollbar-hide">
+      <div className="w-full flex flex-row md:gap-5 max-md:px-4 max-md:gap-4 max-md:overflow-x-auto max-md:whitespace-nowrap max-md:scroll-smooth scrollbar-hide">
         {data?.items &&
           data.items.map((item: Product) => (
             <>
-              <div className="flex flex-col max-md:ml-4">
+              <div className="flex flex-col  ">
                 <div className="w-[295px] h-[298px] mb-4 max-md:w-[198px] max-md:h-[200.01px]">
                   <img
                     src={imageMap[item.image]}

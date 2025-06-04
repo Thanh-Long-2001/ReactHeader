@@ -38,7 +38,7 @@ export const DressStyle = () => {
         {dressStyles.map((style) => (
           <div
             key={style.id}
-            className={`relative rounded-[20px] overflow-hidden md:h-[289px] h-[190px] max-md:w-[310px] cursor-pointer ${
+            className={`relative rounded-[20px] overflow-hidden md:h-[289px] h-[190px] max-md:w-full cursor-pointer ${
               style.id === 3 || style.id === 2
                 ? "md:col-span-2"
                 : "md:col-span-1"

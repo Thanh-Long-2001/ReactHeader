@@ -64,16 +64,18 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
             key={item.id}
             className="md:w-[400px] md:h-[240px] h-[186.19px] w-[358px] rounded-[20px] border border-gray-300"
           >
-            <div className="w-[336px] flex flex-col md:ml-10 ml-6">
-              <div className="flex items-center mb-2 mt-[28px]">
+            <div className="md:w-[336px] w-full flex flex-col md:ml-10 max-md:p-6">
+              <div className="flex items-center md:mb-2 md:mt-[28px]">
                 {renderStars(getNumericStars(item.stars))}
                 <span className="ml-2 text-sm text-black/60">{item.stars}</span>
               </div>
-              <div className="flex gap-1">
-                <span className="">{item.name}</span>
-                <img src={VerifyIcon}></img>
+              <div className="flex gap-1 max-md:mt-3 max-md:w-full max-md:h-[19px] items-center">
+                <span className="text-[16px]">{item.name}</span>
+                <img src={VerifyIcon} width={19} height={19}></img>
               </div>
-              <p className="font-satoshi text-[16px] mt-3">{item.comment}</p>
+              <p className="font-satoshi text-[16px] max-md:text-[14px] md:mt-3 mt-[8px] max-md:leading-5">
+                {item.comment}
+              </p>
             </div>
           </div>
         ))}
