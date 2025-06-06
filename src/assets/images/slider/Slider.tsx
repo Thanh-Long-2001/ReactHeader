@@ -33,10 +33,10 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
   return (
     <div className="md:max-w-[1260px] w-full md:mt-[80px] mt-[50px]">
       <div className="w-full px-[10px] flex justify-between items-center md:mb-10 mb-6 font-intergralCF max-md:relative">
-        <h2 className="md:text-[48px] font-[700] md:h-[58px] md:w-[654px] text-[32px] h-18 w-[286px] max-md:ml-4 max-md:leading-9 ">
+        <h2 className="md:text-5xl font-[700] md:leading-[58px] md:w-[654px] text-[32px] w-[286px] max-md:ml-4 max-md:leading-9 ">
           OUR HAPPY CUSTOMERS
         </h2>
-        <div className="flex gap-2 max-md:absolute right-0 bottom-0">
+        <div className="h-full flex gap-2 max-md:absolute right-0 bottom-0">
           <button
             onClick={() => carouselRef?.current?.previous(1)}
             className="bg-transparent px-2 pt-2 rounded"
@@ -71,10 +71,10 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
                 <span className="ml-2 text-sm text-black/60">{item.stars}</span>
               </div>
               <div className="flex gap-1 max-md:mt-3 max-md:w-full max-md:h-[19px] items-center">
-                <span className="text-[16px]">{item.name}</span>
+                <span className="text-base">{item.name}</span>
                 <img src={VerifyIcon} width={19} height={19}></img>
               </div>
-              <p className="font-satoshi text-[16px] max-md:text-[14px] md:mt-3 mt-[8px] max-md:leading-5">
+              <p className="font-satoshi text-base max-md:text-sm md:mt-3 mt-[8px] max-md:leading-5">
                 {item.comment}
               </p>
             </div>

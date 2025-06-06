@@ -30,7 +30,7 @@ export const DressStyle = () => {
   return (
     <div className="  md:max-w-[1240px] w-full max-md:px-4 md:h-[866px] h-[975px]">
       <div className="w-full h-full md:px-[64px] px-[24px] flex flex-col items-center bg-[#f2f2f2] rounded-[40px] max-md:rounded-[20px]">
-        <div className="md:text-[48px] text-[32px] font-intergralCF md:mb-[64px] md:mt-[70px] mt-10 md:h-[58px] h-[72px] w-[687px] max-md:text-wrap max-md:w-[246px] ">
+        <div className="md:text-5xl text-[32px] font-intergralCF md:mb-[64px] md:mt-[70px] mt-10 md:h-14.5 h-18 w-[687px] max-md:text-wrap max-md:w-61.5 ">
           <span className="flex text-center max-md:leading-9">
             BROWSE BY DRESS STYLE
           </span>
@@ -39,7 +39,7 @@ export const DressStyle = () => {
           {dressStyles.map((style) => (
             <div
               key={style.id}
-              className={`relative rounded-[20px] overflow-hidden md:h-[289px] h-[190px] max-md:w-full cursor-pointer ${
+              className={`relative rounded-[20px] overflow-hidden md:h-[289px] h-47.5 max-md:w-full cursor-pointer ${
                 style.id === 3 || style.id === 2
                   ? "md:col-span-2"
                   : "md:col-span-1"
@@ -50,7 +50,7 @@ export const DressStyle = () => {
                 alt={style.label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute md:top-[25px] md:left-[36px] top-4 left-6 text-black font-satoshi md:text-[36px] bg-transparent md:px-2 md:py-1 rounded text-[24px]">
+              <div className="absolute md:top-6.25 md:left-[36px] top-4 left-6 text-black font-satoshi md:text-4xl bg-transparent md:px-2 md:py-1 rounded text-2xl">
                 {style.label}
               </div>
             </div>
