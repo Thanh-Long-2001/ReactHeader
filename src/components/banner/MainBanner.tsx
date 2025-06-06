@@ -11,7 +11,7 @@ export const MainBanner = () => {
   return (
     <>
       <div className="w-full h-[663px] max-md:h-[853px] bg-[#f2f0f1]">
-        <div className="relative md:w-[1440px] md:mx-auto flex flex-col h-full">
+        <div className="relative md:max-w-[1440px] md:mx-auto flex flex-col h-full">
           <div className="w-full md:h-full h-112 max-md:absolute bottom-0">
             <img
               src={BannerImage}

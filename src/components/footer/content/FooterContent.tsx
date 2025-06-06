@@ -2,8 +2,8 @@ import SocialContact from "../../../assets/images/socialContact/Social.png";
 
 export const FooterContent = () => {
   return (
-    <div className="md:h-[177px] md:w-[1240px] w-full max-md:px-4 flex max-md:flex-col md:justify-between font-satoshi md:mt-[50px] mt-[31.58px]">
-      <div className="flex flex-col md:justify-between md:w-[248px] md:mr-[113.5px] w-full">
+    <div className="md:h-[177px] md:max-w-[1240px] w-full max-md:px-4 flex max-md:flex-col font-satoshi md:mt-[50px] mt-[31.58px] md:gap-[113.5px]">
+      <div className="flex flex-col md:justify-between md:w-[248px]  w-full">
         <div className="md:text-[33.45px] w-[167px] h-[23px] inline-block text-[28.85px]">
           <span className="block font-intergralCF mt-[-17px]">SHOP.CO</span>
         </div>
@@ -15,15 +15,15 @@ export const FooterContent = () => {
           <img src={SocialContact}></img>
         </div>
       </div>
-      <div className="md:flex md:flex-1 md:justify-between grid grid-cols-2 grid-rows-2 max-md:gap-y-6 max-md:mt-[24.42px] max-md:h-79">
-        <div className="flex flex-col w-26">
+      <div className="md:flex md:flex-1 md:justify-between grid grid-cols-2 grid-rows-2 max-md:gap-y-6 max-md:mt-[24.42px] max-md:h-79 md:gap-[113.5px] flex-wrap">
+        <div className="flex flex-col">
           <div className="md:h-[30px] flex items-start font-satoshi">
             <span className="md:text-[16px] text-[14px] font-[500] leading-4.5">
               COMPANY
             </span>
           </div>
 
-          <ul className="h-[133px] text-nowrap font-[400] flex flex-col justify-between mt-[26px] font-satoshi md:text-[16px] text-[14px] leading-[19px] text-black/60 max-md:mt-4">
+          <ul className="h-[133px] text-wrap font-[400] flex flex-col justify-between mt-[26px] font-satoshi md:text-[16px] text-[14px] leading-[19px] text-black/60 max-md:mt-4">
             <li>
               <span>About</span>
             </li>
@@ -38,13 +38,13 @@ export const FooterContent = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col w-34">
+        <div className="flex flex-col">
           <div className="md:h-[30px] flex items-start font-satoshi">
             <span className="md:text-[16px] text-[14px] font-[500] leading-4.5">
               HELP
             </span>
           </div>
-          <ul className="h-[133px] text-nowrap font-[400] flex flex-col md:text-[16px] text-[14px] leading-[19px] justify-between mt-[26px] text-black/60 max-md:mt-4">
+          <ul className="h-[133px] text-wrap font-[400] flex flex-col md:text-[16px] text-[14px] leading-[19px] justify-between mt-[26px] text-black/60 max-md:mt-4">
             <li>
               <span>Customer Support</span>
             </li>
@@ -59,13 +59,13 @@ export const FooterContent = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col w-[149px]">
+        <div className="flex flex-col">
           <div className="md:h-[30px] flex items-start font-satoshi">
             <span className="md:text-[16px] text-[14px] font-[500] leading-4.5">
               FAQ
             </span>
           </div>
-          <ul className="h-[133px] text-nowrap font-[400] flex flex-col md:text-[16px] text-[14px] leading-[19px] justify-between mt-[26px] text-black/60 max-md:mt-4">
+          <ul className="h-[133px] text-wrap font-[400] flex flex-col md:text-[16px] text-[14px] leading-[19px] justify-between mt-[26px] text-black/60 max-md:mt-4">
             <li>
               <span>Account</span>
             </li>
@@ -80,13 +80,13 @@ export const FooterContent = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col w-[149px]">
+        <div className="flex flex-col">
           <div className="md:h-[30px] flex items-start font-satoshi">
             <span className="md:text-[16px] text-[14px] font-[500] leading-4.5">
               RESOURCES
             </span>
           </div>
-          <ul className="h-[133px] text-nowrap font-[400] flex flex-col md:text-[16px] text-[14px] leading-[19px] justify-between mt-[26px] text-black/60 max-md:mt-4">
+          <ul className="h-[133px] text-wrap font-[400] flex flex-col md:text-[16px] text-[14px] leading-[19px] justify-between mt-[26px] text-black/60 max-md:mt-4">
             <li>
               <span>Free eBooks</span>
             </li>

@@ -7,8 +7,8 @@ import { VerSaceBrand } from "../../assets/icons/BrandIcon.tsx/VerSaceBrand";
 export const FooterBanner = () => {
   return (
     <div className="w-full bg-black h-[146px] flex justify-center max-md:mb-[10px]">
-      <div className="w-[1440px] max-md:h-[146px] bg-black flex md:items-center md:justify-between max-md:w-full">
-        <div className="flex gap-[106px] w-full ml-25 max-md:hidden">
+      <div className="max-w-[1240px] max-md:h-[146px] w-full bg-black flex md:items-center md:justify-between">
+        <div className="flex justify-between w-full max-md:hidden flex-wrap">
           <div>
             <VerSaceBrand />
           </div>

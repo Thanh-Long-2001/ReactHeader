@@ -31,8 +31,8 @@ type Vote = {
 export const Slider = ({ data }: { data: { items: Vote[] } }) => {
   const carouselRef = useRef<Carousel>(null);
   return (
-    <div className="md:w-[1243px] w-full md:ml-[100px] md:mt-[80px] mt-[50px]">
-      <div className="flex justify-between items-center md:mb-10 mb-6 font-intergralCF max-md:relative">
+    <div className="md:max-w-[1260px] w-full md:mt-[80px] mt-[50px]">
+      <div className="w-full px-[10px] flex justify-between items-center md:mb-10 mb-6 font-intergralCF max-md:relative">
         <h2 className="md:text-[48px] font-[700] md:h-[58px] md:w-[654px] text-[32px] h-18 w-[286px] max-md:ml-4 max-md:leading-9 ">
           OUR HAPPY CUSTOMERS
         </h2>
@@ -57,7 +57,8 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
         itemClass="carouselItem"
         ref={carouselRef}
         arrows={false}
-        containerClass="flex md:justify-center rounded-[20px] max-md:ml-4"
+        partialVisible={false}
+        containerClass="flex md:justify-center rounded-[20px] w-full md:ml-[10px]"
       >
         {data?.items?.map((item: Vote) => (
           <div
