@@ -12,12 +12,12 @@ const dressStyles = [
   {
     id: 2,
     label: "Formal",
-    image: Image12,
+    image: Image13,
   },
   {
     id: 3,
     label: "Party",
-    image: Image13,
+    image: Image12,
   },
   {
     id: 4,

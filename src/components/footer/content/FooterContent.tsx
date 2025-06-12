@@ -17,12 +17,9 @@ export const FooterContent = () => {
       </div>
       <div className="md:flex md:flex-1 md:justify-between grid grid-cols-2 grid-rows-2 max-md:gap-y-6 max-md:mt-[24.42px] max-md:h-79 md:gap-[113.5px] flex-wrap">
         <div className="flex flex-col">
-          <div className="md:h-7.5 flex items-start font-satoshi">
-            <span className="md:text-base text-sm font-[500] leading-4.5">
-              COMPANY
-            </span>
-          </div>
-
+          <span className="text-black md:text-base text-sm font-[500] leading-4.5 font-satoshi">
+            COMPANY
+          </span>
           <ul className="h-33.25 text-wrap font-[400] flex flex-col justify-between mt-6.5 font-satoshi md:text-base text-sm leading-4.75 text-black/60 max-md:mt-4">
             <li>
               <span>About</span>
@@ -39,11 +36,9 @@ export const FooterContent = () => {
           </ul>
         </div>
         <div className="flex flex-col">
-          <div className="md:h-[30px] flex items-start font-satoshi">
-            <span className="md:text-base text-sm font-[500] leading-4.5">
-              HELP
-            </span>
-          </div>
+          <span className="text-black md:text-base text-sm font-[500] leading-4.5 font-satoshi">
+            HELP
+          </span>
           <ul className="h-33.25 text-wrap font-[400] flex flex-col md:text-base text-sm leading-4.75 justify-between mt-6.5 text-black/60 max-md:mt-4">
             <li>
               <span>Customer Support</span>
@@ -60,11 +55,10 @@ export const FooterContent = () => {
           </ul>
         </div>
         <div className="flex flex-col">
-          <div className="md:h-7.5 flex items-start font-satoshi">
-            <span className="md:text-base text-sm font-[500] leading-4.5">
-              FAQ
-            </span>
-          </div>
+          <span className="text-black md:text-base text-sm font-[500] leading-4.5 font-satoshi">
+            FAQ
+          </span>
+
           <ul className="h-33.25 text-wrap font-[400] flex flex-col md:text-base text-sm leading-4.75 justify-between mt-6.5 text-black/60 max-md:mt-4">
             <li>
               <span>Account</span>
@@ -81,11 +75,10 @@ export const FooterContent = () => {
           </ul>
         </div>
         <div className="flex flex-col">
-          <div className="md:h-[30px] flex items-start font-satoshi">
-            <span className="md:text-[16px] text-[14px] font-[500] leading-4.5">
-              RESOURCES
-            </span>
-          </div>
+          <span className="text-black md:text-base text-sm font-[500] leading-4.5 font-satoshi">
+            RESOURCES
+          </span>
+
           <ul className="h-33.25 text-wrap font-[400] flex flex-col md:text-base text-sm leading-4.75 justify-between mt-6.5 text-black/60 max-md:mt-4">
             <li>
               <span>Free eBooks</span>

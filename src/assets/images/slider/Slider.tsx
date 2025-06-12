@@ -31,21 +31,21 @@ type Vote = {
 export const Slider = ({ data }: { data: { items: Vote[] } }) => {
   const carouselRef = useRef<Carousel>(null);
   return (
-    <div className="md:max-w-[1260px] w-full md:mt-[80px] mt-[50px]">
-      <div className="w-full px-[10px] flex justify-between items-center md:mb-10 mb-6 font-intergralCF max-md:relative">
+    <div className="md:max-w-[1240px] w-full md:mt-[80px] mt-[50px]">
+      <div className="w-full flex justify-between items-center md:mb-10 mb-6 font-intergralCF max-md:relative">
         <h2 className="md:text-5xl font-[700] md:leading-[58px] md:w-[654px] text-[32px] w-[286px] max-md:ml-4 max-md:leading-9 ">
           OUR HAPPY CUSTOMERS
         </h2>
         <div className="h-full flex gap-2 max-md:absolute right-0 bottom-0">
           <button
             onClick={() => carouselRef?.current?.previous(1)}
-            className="bg-transparent px-2 pt-2 rounded"
+            className="bg-transparent px-2 pt-2 rounded cursor-pointer"
           >
             <img src={LeftArrow} />
           </button>
           <button
             onClick={() => carouselRef?.current?.next(1)}
-            className="bg-transparent px-2 pt-2 rounded max-md:mr-2"
+            className="bg-transparent px-2 pt-2 rounded max-md:mr-2 cursor-pointer"
           >
             <img src={RightArrow} />
           </button>
@@ -58,7 +58,7 @@ export const Slider = ({ data }: { data: { items: Vote[] } }) => {
         ref={carouselRef}
         arrows={false}
         partialVisible={false}
-        containerClass="flex md:justify-center rounded-[20px] w-full md:ml-[10px]"
+        containerClass="flex md:justify-center rounded-[20px] w-full"
       >
         {data?.items?.map((item: Vote) => (
           <div

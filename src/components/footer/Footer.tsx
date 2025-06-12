@@ -36,11 +36,11 @@ export const Footer = () => {
       <div className="md:max-w-310 w-full md:mt-12.5 max-md:mt-10 max-md:px-4">
         <div className="h-[1px] border-t border-gray-300"></div>
       </div>
-      <div className="md:max-w-310 w-full flex max-md:flex-col md:justify-between md:mt-6.25 mt-4 items-center">
-        <span className="text-sm font-satoshi max-md:leading-[100%]">
+      <div className="md:max-w-310 w-full flex max-md:flex-col md:justify-between max-md:mt-4 items-start max-md:items-center">
+        <span className="text-sm font-satoshi max-md:leading-[100%] md:mt-6.25">
           Shop.co © 2000-2023, All Rights Reserved
         </span>
-        <div className="mt-4">
+        <div className="md:mt-5 mt-4">
           <img src={PaymentImg}></img>
         </div>
       </div>
